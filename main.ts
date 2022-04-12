@@ -1,4 +1,3 @@
-led.plotBrightness(2, 2, 127)
 let A1 = [0, 0]
 let B1 = [0, 0]
 let C1 = [0, 0]
@@ -17,6 +16,9 @@ function stred_soumernost() {
     Plotting()
 }
 
+basic.forever(function stred() {
+    led.plotBrightness(2, 2, 127)
+})
 input.onButtonPressed(Button.A, function on_button_pressed_a() {
     
     if (C1[0] - B1[0] == 3) {

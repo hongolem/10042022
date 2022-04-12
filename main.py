@@ -1,5 +1,3 @@
-led.plot_brightness(2, 2, 127)
-
 A1 = [0, 0]
 B1 = [0, 0]
 C1 = [0, 0]
@@ -18,6 +16,10 @@ def stred_soumernost():
     C1 = [1, 1]
     D1 = [1, 0]
     Plotting()
+
+def stred():
+    led.plot_brightness(2, 2, 127)
+basic.forever(stred)
 
 def on_button_pressed_a():
     global A1, B1, C1, D1, A2, B2, C2, D2
